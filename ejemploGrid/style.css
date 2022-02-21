@@ -1,0 +1,34 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    color: black;
+  }
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    color: black;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: #668985;
+    color: white;
+}
+
+.grid-item:nth-child(odd):hover {
+    background-color: wheat;
+    color: black;
+}
+
+.grid-item:nth-child(1):hover{
+    grid-area: 1/1/3/3;
+}
+
+.grid-item:nth-child(3):hover{
+    grid-area: 3/3/2/2;
+}
